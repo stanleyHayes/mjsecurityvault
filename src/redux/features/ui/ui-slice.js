@@ -6,7 +6,7 @@ const uiSlice = createSlice({
     initialState: {
         theme: localStorage.getItem(MJ_SECURITY_VAULT_CONSTANTS.MJ_SECURITY_VAULT_THEME_VARIANT_KEY) ?
             localStorage.getItem(MJ_SECURITY_VAULT_CONSTANTS.MJ_SECURITY_VAULT_THEME_VARIANT_KEY) :
-            "light",
+            "dark",
         drawerOpen: false
     },
     reducers: {
