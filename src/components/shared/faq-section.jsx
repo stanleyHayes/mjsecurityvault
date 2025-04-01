@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
 import {selectFAQs} from "../../redux/features/faqs/faqs-slice";
 import FAQ from "./faq.jsx";
+import {Link as ScrollLink} from "react-scroll";
 
 const FAQsSection = () => {
 
@@ -48,20 +49,26 @@ const FAQsSection = () => {
                                         <Typography variant="body2" sx={{color: "text.secondary", mb: 4}}>
                                             Please leave a request and we will contact you shortly.
                                         </Typography>
-                                        <Link to="/contact" style={{textDecoration: "none"}}>
+                                        <ScrollLink
+                                            to="contact"
+                                            smooth={true}
+                                            spy={true}
+                                            offset={50}
+                                            duration={500}
+                                            delay={100}>
                                             <Button
-                                                disableElevation={true}
                                                 variant="contained"
                                                 size="large"
+                                                disableElevation={true}
                                                 sx={{
                                                     textTransform: "capitalize",
                                                     color: "white",
                                                     backgroundColor: "colors.footer",
                                                     fontWeight: 700
                                                 }}>
-                                                Contact Us
+                                                Get in Touch
                                             </Button>
-                                        </Link>
+                                        </ScrollLink>
                                     </CardContent>
                                 </Card>
                             </Grid>

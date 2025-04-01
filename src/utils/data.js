@@ -35,7 +35,7 @@ export const MJ_SECURITY_VAULT_DATA = {
         },
         {
             image: nat,
-            name: "Nathaniel Robertson",
+            name: "Kelvin Heinz",
             role: "Client Relations Manager"
         }
 

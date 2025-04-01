@@ -10,6 +10,7 @@ import {Link} from "react-router-dom";
 import Choice from "./choice.jsx";
 import {MJ_SECURITY_VAULT_DATA} from "../../utils/data.js";
 import Service from "./service.jsx";
+import {Link as ScrollLink} from "react-scroll";
 
 const ChoicesSection = () => {
 
@@ -32,7 +33,7 @@ const ChoicesSection = () => {
                     </Box>
 
                     <Box>
-                        <Typography align="center" variant="body1" sx={{color: "text.secondary"}}>
+                        <Typography variant="body1" sx={{color: "text.secondary"}}>
                             Our commitment to protection goes beyond locks and cameras. Discover the high-tech
                             systems and multi-layered defenses that make MJ Security Vault one of the safest
                             storage solutions on the continent.
@@ -58,7 +59,13 @@ const ChoicesSection = () => {
                     <Box>
                         <Grid container={true} spacing={2} justifyContent="center">
                             <Grid size={{xs: 12, md: 3}}>
-                                <Link to="/contact" style={{textDecoration: "none", width: "100%", display: "block"}}>
+                                <ScrollLink
+                                    to="contact"
+                                    smooth={true}
+                                    spy={true}
+                                    offset={50}
+                                    duration={500}
+                                    delay={100}>
                                     <Button
                                         fullWidth={true}
                                         variant="outlined"
@@ -74,7 +81,7 @@ const ChoicesSection = () => {
                                         }}>
                                         Contact Us
                                     </Button>
-                                </Link>
+                                </ScrollLink>
                             </Grid>
                         </Grid>
                     </Box>

@@ -26,7 +26,7 @@ const AboutSection = () => {
                     <Box>
                         <Typography variant="body1" sx={{color: "text.secondary"}}>
                             At MJ Security Vault, we believe true security is built on trust, technology, and time.
-                            With over three decades of experience protecting what matters most, we’ve grown into a
+                            With over six decades of experience protecting what matters most, we’ve grown into a
                             fortress of reliability for individuals and businesses alike. Learn more about who we
                             are, what we stand for, and why our clients trust us with their most valuable
                             possessions.
