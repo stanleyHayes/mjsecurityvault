@@ -86,7 +86,6 @@ const DrawerContent = () => {
                         <NavLink path="/" label="Home"/>
                         <NavigationLink path="us" label="About Us"/>
                         <NavigationLink path="services" label="Services"/>
-                        <NavigationLink path="plans" label="Payment Plans"/>
                         <NavigationLink path="contact" label="Contact"/>
                         <NavigationLink path="reviews" label="Testimonials"/>
                     </Stack>

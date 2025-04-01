@@ -32,26 +32,11 @@ const TeamSection = () => {
                         <Grid container={true} spacing={2}>
                             {MJ_SECURITY_VAULT_DATA.STAFF.map((staff, index) => {
                                 return (
-                                    <Grid key={index} size={{xs: 12, md: 4, lg: 2}}>
+                                    <Grid key={index} size={{xs: 12, md: 4, lg: 3}}>
                                         <Staff staff={staff}/>
                                     </Grid>
                                 )
                             })}
-                            <Grid size={{xs: 12, md: 4, lg: 2}}>
-                                <Stack
-                                    sx={{height: "100%"}} direction="row" alignItems="center"
-                                    justifyContent="center">
-                                    <TrendingFlatOutlined
-                                        sx={{
-                                            color: "icon.secondary",
-                                            padding: 1,
-                                            fontSize: 80,
-                                            borderRadius: "100%",
-                                            backgroundColor: "icon.secondaryBackground"
-                                        }}
-                                    />
-                                </Stack>
-                            </Grid>
                         </Grid>
                     </Box>
                 </Stack>

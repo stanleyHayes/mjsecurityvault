@@ -1,36 +1,37 @@
 import jane from "././../assets/images/staff/pexels-andrea-piacquadio-774909.jpg";
-import jenny from "././../assets/images/staff/pexels-monstera-5384445.jpg";
-import robert from "././../assets/images/staff/pexels-monstera-5876695.jpg";
-import cody from "././../assets/images/staff/pexels-ono-kosuki-6000065.jpg";
-import darlene from "././../assets/images/staff/pexels-pixabay-220453.jpg";
+import cody from "././../assets/images/staff/pexels-monstera-5384445.jpg";
+import wilson from "././../assets/images/staff/wilson.jpg";
+import nat from "././../assets/images/staff/cody.jpg";
+import robert from "././../assets/images/staff/pexels-pixabay-220453.jpg";
 
 export const MJ_SECURITY_VAULT_DATA = {
     STAFF: [
         {
             image: jane,
             name: "Jane Cooper",
-            years_of_experience: 5
+            role: "Chief Executive Officer"
+        },
+        {
+            image: wilson,
+            name: "Joseph Wilson",
+            role: "Head of Security Operations"
         },
         {
             image: robert,
-            name: "Jenny Wilson",
-            years_of_experience: 3
-        },
-        {
-            image: darlene,
             name: "Robert Fox",
-            years_of_experience: 3
-        },
-        {
-            image: jenny,
-            name: "Cody Fisher",
-            years_of_experience: 10
+            role: "Lead Systems Engineer"
         },
         {
             image: cody,
-            name: "Darlene Robertson",
-            years_of_experience: 2
+            name: "Cody Fisher",
+            role: "Vault Technology Architect"
+        },
+        {
+            image: nat,
+            name: "Nathaniel Robertson",
+            role: "Client Relations Manager"
         }
+
     ],
     SERVICES: [
         {

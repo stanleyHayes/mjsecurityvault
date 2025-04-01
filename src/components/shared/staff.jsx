@@ -14,7 +14,7 @@ const Staff = ({staff}) => {
                         {staff.name}
                     </Typography>
                     <Typography variant="body2" align="center" sx={{color: "text.secondary"}}>
-                        {`${staff.years_of_experience} year${staff.years_of_experience === 1 ?'': 's'} experience`}
+                        {staff.role}
                     </Typography>
                 </Stack>
             </CardContent>

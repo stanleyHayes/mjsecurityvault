@@ -46,12 +46,6 @@ const HomePage = () => {
                 </AnimatedSection>
             </Element>
 
-            <Element name="plans">
-                <AnimatedSection>
-                    <VaultPlanSection/>
-                </AnimatedSection>
-            </Element>
-
 
             <Element name="contact">
                 <AnimatedSection>
