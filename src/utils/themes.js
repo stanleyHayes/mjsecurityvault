@@ -76,8 +76,8 @@ const darkTheme = createTheme({
         icon: {
             accent: "#c89743",
             secondary: "#247FFB",
-            accentBackground: "rgba(200,151,67,0.05)",
-            secondaryBackground: "rgba(36,127,251,0.05)"
+            accentBackground: "rgba(200,151,67,0.1)",
+            secondaryBackground: "rgba(36,127,251,0.1)"
         },
         mode: "dark",
     }

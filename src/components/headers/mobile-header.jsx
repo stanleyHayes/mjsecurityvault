@@ -1,4 +1,4 @@
-import {Box, CardMedia, Grid, Stack, Toolbar, Typography} from "@mui/material";
+import {Box, Button, CardMedia, Grid, Stack, Toolbar, Typography} from "@mui/material";
 import {DarkModeOutlined, LightModeOutlined, Menu} from "@mui/icons-material";
 import {useDispatch, useSelector} from "react-redux";
 import {selectUI, UI_ACTION_CREATORS} from "../../redux/features/ui/ui-slice";
@@ -45,6 +45,20 @@ const MobileHeader = () => {
                 </Grid>
                 <Grid>
                     <Stack direction="row" spacing={1} alignItems="center">
+                        <Link to="/consignment" style={{textDecoration: "none"}}>
+                            <Button
+                                fullWidth={true}
+                                variant="contained"
+                                disableElevation={true}
+                                size="small"
+                                color="secondary"
+                                sx={{
+                                    textTransform: "capitalize"
+                                }}>
+                                Check Vault
+                            </Button>
+                        </Link>
+
                         <AnimatePresence initial={true} mode="sync">
                             {theme === "dark" && (
                                 <Box component={motion.div} exit={{opacity: 0, transition: {duration: 0.5}}}>

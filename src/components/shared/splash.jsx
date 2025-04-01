@@ -15,7 +15,6 @@ const Splash = () => {
                                 textTransform: "uppercase",
                                 color: "secondary.main",
                                 fontWeight: 700,
-                                letterSpacing: 1.4,
                                 mb: 3
                             }}>
                             MJ Security Vault
@@ -32,15 +31,6 @@ const Splash = () => {
                     </Box>
                     <Box>
                         <Stack direction="column" spacing={3} alignItems="center">
-                            <Typography
-                                variant="h6"
-                                sx={{
-                                    color: "secondary.main",
-                                    fontWeight: 700,
-                                    letterSpacing: 1.4
-                                }}>
-                                MJ Security Vault
-                            </Typography>
 
                             <Link to="/" style={{textDecoration: "none"}}>
                                 <CardMedia

@@ -38,7 +38,7 @@ const Layout = ({children}) => {
                         }}>
                         {children}
                     </Box>
-                    <Box sx={{width: '100%', backgroundColor: "background.footer"}}>
+                    <Box sx={{width: '100%', backgroundColor: "background.paper"}}>
                         <Footer/>
                     </Box>
                 </Box>

@@ -28,7 +28,7 @@ const ContactForm = () => {
     return (
         <Card
             variant="elevation"
-            sx={{borderRadius: 8, backgroundColor: "background.paper"}}
+            sx={{backgroundColor: "background.paper"}}
             elevation={0}>
             <CardContent>
                 <form onSubmit={formik.handleSubmit}>
@@ -115,7 +115,7 @@ const ContactForm = () => {
                                     name="phone"
                                     sx={{borderRadius: 2}}
                                     startAdornment={
-                                    <CallOutlined sx={{fontSize: 20, mr: 2}} color="secondary"/>}
+                                        <CallOutlined sx={{fontSize: 20, mr: 2}} color="secondary"/>}
                                     type="tel"
                                     required={true}
                                     size="medium"
@@ -142,7 +142,8 @@ const ContactForm = () => {
                                     placeholder="Your Message"
                                     name="message"
                                     sx={{borderRadius: 2}}
-                                    startAdornment={<CommentOutlined sx={{fontSize: 20, mr: 2, verticalAlign: "top"}} color="secondary"/>}
+                                    startAdornment={<CommentOutlined sx={{fontSize: 20, mr: 2, verticalAlign: "top"}}
+                                                                     color="secondary"/>}
                                     type="text"
                                     required={true}
                                     size="medium"

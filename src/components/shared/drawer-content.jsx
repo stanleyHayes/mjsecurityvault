@@ -63,30 +63,18 @@ const DrawerContent = () => {
                             color: "icon.secondary",
                             padding: 1,
                             fontSize: 32,
-                            borderRadius: "100%",
+                            borderRadius: "10%",
                             cursor: "pointer",
                             backgroundColor: "icon.secondaryBackground"
                         }}/>
                 </Stack>
 
                 <Box sx={{px: 4}}>
-                    <Link to="/" style={{textDecoration: "none"}}>
-                        <Typography
-                            variant="h4"
-                            sx={{
-                                textTransform: "uppercase",
-                                color: "icon.secondary",
-                                fontWeight: 700,
-                                letterSpacing: 1.4
-                            }}>
-                            MJ Security Vault
-                        </Typography>
-                    </Link>
                     <Stack direction="row" spacing={3} alignItems="center" justifyContent="center">
                         <Link to="/" style={{textDecoration: "none"}}>
                             <CardMedia
                                 component="img"
-                                sx={{width: 70, height: 70, objectFit: "cover"}}
+                                sx={{width: 150, height: 150, objectFit: "cover"}}
                                 src={logo}
                             />
                         </Link>
