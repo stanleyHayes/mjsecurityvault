@@ -1,16 +1,11 @@
 import Layout from "../../components/layout/layout.jsx";
 import {Box, Button, CardMedia, Container, Grid, Stack, Typography} from "@mui/material";
-import {AnimatePresence, motion} from "framer-motion";
 import {Link} from "react-router-dom";
-import redLogo from "../../assets/images/logo/redLogo.png";
-import blueLogo from "../../assets/images/logo/blueLogo.png";
-import {useSelector} from "react-redux";
-import {selectUI} from "../../redux/features/ui/ui-slice";
+import logo from "../../assets/images/logo/logo.png";
 import {NorthEast} from "@mui/icons-material";
 
 const NotFoundPage = () => {
 
-    const {theme} = useSelector(selectUI);
 
     return (
         <Layout>
@@ -29,32 +24,13 @@ const NotFoundPage = () => {
                                 <Typography variant="h1" sx={{color: "secondary.main"}}>
                                     4
                                 </Typography>
-                                <AnimatePresence initial={true} mode="sync">
-                                    {theme === "dark" && (
-                                        <Box component={motion.div} exit={{opacity: 0, transition: {duration: 0.5}}}>
-                                            <Link to="/" style={{textDecoration: "none"}}>
-                                                <CardMedia
-                                                    component="img"
-                                                    sx={{width: 70, height: 70, objectFit: "cover"}}
-                                                    src={redLogo}
-                                                />
-                                            </Link>
-                                        </Box>
-                                    )}
-                                </AnimatePresence>
-                                <AnimatePresence initial={true} mode="sync">
-                                    {theme === "light" && (
-                                        <Box component={motion.div} exit={{opacity: 0, transition: {duration: 0.5}}}>
-                                            <Link to="/" style={{textDecoration: "none"}}>
-                                                <CardMedia
-                                                    component="img"
-                                                    sx={{width: 70, height: 70, objectFit: "cover"}}
-                                                    src={blueLogo}
-                                                />
-                                            </Link>
-                                        </Box>
-                                    )}
-                                </AnimatePresence>
+                                <Link to="/" style={{textDecoration: "none"}}>
+                                    <CardMedia
+                                        component="img"
+                                        sx={{width: 70, height: 70, objectFit: "cover"}}
+                                        src={logo}
+                                    />
+                                </Link>
                                 <Typography variant="h1" sx={{color: "secondary.main"}}>
                                     4
                                 </Typography>
@@ -72,7 +48,6 @@ const NotFoundPage = () => {
                                         backgroundColor: "light.accent",
                                         fontWeight: 800,
                                         px: 1,
-                                        fontFamily: "SatrevaNova",
                                         borderRadius: 2
                                     }}>
                                     OOPs,
@@ -86,7 +61,6 @@ const NotFoundPage = () => {
                                         backgroundColor: "light.secondary",
                                         fontWeight: 800,
                                         px: 1,
-                                        fontFamily: "SatrevaNova",
                                         borderRadius: 2
                                     }}>
                                     something went wrong
@@ -118,7 +92,6 @@ const NotFoundPage = () => {
                                                 color: "white",
                                                 fontWeight: 700,
                                                 backgroundColor: "secondary.main",
-                                                fontFamily: "SatrevaNova",
                                                 "&:hover": {
                                                     backgroundColor: "light.secondary",
                                                     color: "secondary.main",
