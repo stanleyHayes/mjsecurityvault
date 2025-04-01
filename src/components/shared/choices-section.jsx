@@ -45,6 +45,7 @@ const ChoicesSection = () => {
                                 return (
                                     <Grid key={index} size={{xs: 12, md: 6, lg: 4}}>
                                         <Choice
+                                            image={choice.image}
                                             title={choice.title}
                                             description={choice.description}
                                         />

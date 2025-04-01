@@ -65,7 +65,7 @@ const Banner = () => {
                                     <Grid container={true} spacing={2} justifyContent="center">
                                         <Grid size={{xs: 12, md: 4}}>
                                             <ScrollLink
-                                                to="contact"
+                                                to="services"
                                                 smooth={true}
                                                 spy={true}
                                                 offset={50}
@@ -82,13 +82,13 @@ const Banner = () => {
                                                         fontWeight: 700,
                                                         backgroundColor: "secondary.main",
                                                     }}>
-                                                    Reserve a Vault
+                                                    Services
                                                 </Button>
                                             </ScrollLink>
                                         </Grid>
                                         <Grid size={{xs: 12, md: 4}}>
                                             <ScrollLink
-                                                to="plans"
+                                                to="contact"
                                                 smooth={true}
                                                 spy={true}
                                                 offset={50}
@@ -107,7 +107,7 @@ const Banner = () => {
                                                         borderColor: "secondary.main",
                                                         borderWidth: 2,
                                                     }}>
-                                                    See Plans
+                                                    Get in Touch
                                                 </Button>
                                             </ScrollLink>
                                         </Grid>

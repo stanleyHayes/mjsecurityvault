@@ -4,6 +4,13 @@ import wilson from "././../assets/images/staff/wilson.jpg";
 import nat from "././../assets/images/staff/cody.jpg";
 import robert from "././../assets/images/staff/pexels-pixabay-220453.jpg";
 
+
+import gold1 from "././../assets/images/banner/gold-w1_thumb.jpg";
+import gold2 from "././../assets/images/banner/gold-w2_thumb.jpg";
+import gold3 from "././../assets/images/banner/gold2_thumb.jpg";
+import gold4 from "././../assets/images/banner/gold-w_thumb.jpg";
+import gold5 from "././../assets/images/banner/gold-bullion1_thumb.jpg";
+
 export const MJ_SECURITY_VAULT_DATA = {
     STAFF: [
         {
@@ -65,28 +72,34 @@ export const MJ_SECURITY_VAULT_DATA = {
     ],
     REASONS_TO_CHOOSE: [
         {
+            image: gold1,
             title: 'Multi-Layered Security',
             description: 'Access starts at the front gate, then into the building, then biometric systems per vault section. All access is logged and monitored live.',
         },
         {
+            image: gold2,
             title: 'Advanced Monitoring',
             description: 'AI-powered CCTV with motion detection and facial recognition alerts our team of trained guards immediately.',
         },
         {
+            image: gold3,
             title: 'Biometric Vault Entry',
             description: 'Facial recognition, iris scanning, and fingerprint match — all must align before a vault opens.',
         },
         {
+            image: gold4,
             title: 'Fireproof, Floodproof & EMP-Protected',
             description: 'Our vaults withstand natural and man-made disasters. You can rest easy knowing your valuables are safe even during emergencies.',
         },
         {
+            image: gold5,
             title: 'Backup Systems',
             description: 'Redundant power generators and internet connections ensure zero downtime.',
         },
     ],
     CORE_VALUES: [
         {
+
             title: 'Confidentiality',
             description: 'We never ask what\'s in your vault.'
         },
